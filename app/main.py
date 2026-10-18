@@ -19,6 +19,7 @@ class CleanUpFile:
         if os.path.exists(self.filename):
             os.remove(self.filename)
 
+
 with CleanUpFile("file.txt"):
     with open("file.txt", "w") as file:
         file.write("Hello Mate!")
